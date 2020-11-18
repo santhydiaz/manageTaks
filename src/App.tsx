@@ -2,9 +2,9 @@ import * as React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Task } from "./components/Task/index";
 import { Header } from "./components/Header/index";
-import { NoFound } from "./widgets/index";
+import { NoFound } from "./widgets";
 
-function App(): JSX.Element {
+export const App = (): JSX.Element => {
   return (
     <>
       <Router>
@@ -23,6 +23,4 @@ function App(): JSX.Element {
       </Router>
     </>
   );
-}
-
-export default App;
+};
