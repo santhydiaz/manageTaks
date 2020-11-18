@@ -69,13 +69,13 @@ export const Task = (): JSX.Element => {
                   className="btn btn-secondary"
                   onClick={() => toggleDoneTask(i)}
                 >
-                  {!task.done ? "✓" : "X"}
+                  {!task.done ? <i className="fas fa-check"></i> : <i className="fas fa-times"></i>}
                 </button>
                 <button
                   className="btn border border-danger"
                   onClick={() => removeTask(i)}
                 >
-                  🗑
+                  <i className="fas fa-trash"></i>
                 </button>
               </div>
             </div>
